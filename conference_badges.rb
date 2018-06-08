@@ -4,20 +4,18 @@ def badge_maker(name)
   "Hello, my name is #{name}."
 end
 
-def batch_badge_creator(array)
-  array = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
-  array.each do |name|
-    prints "Hello, my name is #{name}."
+
+def batch_badge_creator(speakers)
+  speakers.collect do |name|
+    badge_maker(name)
   end
-  return "Hello my name is #{name}."
 end
 
-def assign_rooms(array)
-  array = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
-  arary.each do
-    room_number = index += 1
-    prints "Hello, #{name}! You'll be assigned to room #{room_number}!"
+
+def assign_rooms(speakers)
+  room = 0
+  speakers.collect do |name|
+    room += 1
+    "Hello, #{name}! You'll be assigned to room #{room}!"
   end
-  return "Hello, #{name}! You'll be assigned to room #{room_number}!"
-end
 end
