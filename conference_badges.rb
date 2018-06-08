@@ -21,4 +21,3 @@ def assign_rooms(array)
   return "Hello, #{name}! You'll be assigned to room #{room_number}!"
 end
 end
-  
