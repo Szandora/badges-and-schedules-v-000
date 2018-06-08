@@ -12,10 +12,10 @@ def batch_badge_creator(array)
   return "Hello my name is #{name}."
 end
 
-def assign_rooms
+def assign_rooms(array)
   array = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
   arary.each do
-    room_number = index += 1 
+    room_number = index += 1
     prints "Hello, #{name}! You'll be assigned to room #{room_number}!"
   end
   return "Hello, #{name}! You'll be assigned to room #{room_number}!"
